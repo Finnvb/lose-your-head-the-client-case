@@ -1,3 +1,12 @@
+:root {
+    --dark: #101010;
+    --light: #F3F3F3;
+    --grey: #c7c7c7;
+    --red: #8c0500;
+    --redLight: #da2a2a;
+}
+
+
 * {
 	padding: 0;
 	margin: 0;
@@ -13,4 +22,5 @@
 
 body{
 	font-family: 'Austral Sans', sans-serif;
+	color: var(--red);
 }
