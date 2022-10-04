@@ -4,4 +4,3 @@ import Header from "../../lib/components/Header.svelte";
 
 <Header></Header>
 
-<h1>hello</h1>

@@ -23,5 +23,6 @@
 body{
 	font-family: 'Austral Sans', sans-serif;
 	color: var(--light);
+    overflow: hidden;
     
 }

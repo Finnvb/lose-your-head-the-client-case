@@ -3,14 +3,14 @@
     // import Footer from '$lib/components/Footer.svelte';
 </script>
 
-<section transition:fly={{ y: -200, duration: 300 }}>
+<section transition:fly={{ x:1000, duration: 800 }}>
    
    <nav>
-       <li><a href="/">HOME</a></li>
-       <li><a href="/">LEERJAREN</a></li>
-       <li><a href="/">SQUADS</a></li>
+       <li><a href="/">Spanish Migrant</a></li>
+       <li><a href="/">The VIP</a></li>
+       <li><a href="/">A family House</a></li>
 
-       <li><a href="/about">ABOUT US</a></li>
+
 
 
    </nav>
@@ -26,11 +26,11 @@
        justify-content: center;
        align-items: center;
        position: absolute;
-       background-color: black;
+       background-color:maroon;
        top: 0;
-       width: 100vw;
+       right: 0;
+       width: 30vw;
        height: 100vh;
-       z-index: 999;
        color: #ffffff;
        opacity: 100;
      
@@ -39,7 +39,7 @@
    a{
        text-decoration: none;
        color: lightgray;
-       font-size: 2rem;
+       font-size: 1.5rem;
        font-weight: bold;
        transition: 300ms;
    }
@@ -63,7 +63,7 @@
 
    li{
        list-style: none;
-       margin: 1.5rem 0;
+       margin: 0.5rem 0;
        transition: 300ms;
    }
 </style>

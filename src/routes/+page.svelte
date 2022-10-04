@@ -44,7 +44,6 @@
 
 	a {
 		text-decoration: none;
-		/* padding:1rem; */
 		color: white;
 		font-size: 1.5rem;
 	}
@@ -64,6 +63,7 @@
 	}
 	img {
 		height: 6rem;
+	
 		border-radius: 1rem;
 	}
 
