@@ -12,7 +12,7 @@
 
 		<div class="container">
 			<img src="goldplate2.png" alt="goldplate2" />
-			<div class="centered"><a href="/">Discover Stories</a></div>
+			<div class="centered"><a href="/overview">Discover Stories</a></div>
 		</div>
 
 		<img class="ilojo-bar" src="cdf-1950s.png" alt="Ilojo-bar" />
