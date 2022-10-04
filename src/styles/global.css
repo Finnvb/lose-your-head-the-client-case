@@ -22,5 +22,6 @@
 
 body{
 	font-family: 'Austral Sans', sans-serif;
-	color: var(--red);
+	color: var(--light);
+    
 }
