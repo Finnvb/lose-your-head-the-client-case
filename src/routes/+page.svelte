@@ -1,8 +1,17 @@
 <script>
+	import Footer from '$lib/components/Footer.svelte';
+	import Button from '$lib/components/Button.svelte';
+	  import * as prismicH from "@prismicio/helpers";
+    export let data;
+
+    const { document } = data;
+
+	// console.log(document)
 </script>
 
 <main>
 	<header>
+		<!-- <h1>{@html prismicH.asHTML(document[2].data.storytitle)}</h1> -->
 		<h1>Stories of the <br /> ILOJO BAR</h1>
 
 		<h2>Discover the stories of the <br /> demolished bar in Lagos</h2>
@@ -10,14 +19,17 @@
 
 	<section>
 
-		<div class="container">
+		<!-- <div class="container">
 			<img src="goldplate2.png" alt="goldplate2" />
 			<div class="centered"><a href="/overview">Discover Stories</a></div>
-		</div>
+		</div> -->
+		<Button link={'overview'} linktext={'Discover Stories'}/>
 
 		<img class="ilojo-bar" src="cdf-1950s.png" alt="Ilojo-bar" />
 	</section>
 </main>
+
+<Footer />
 
 <style>
 	main {
@@ -42,30 +54,10 @@
 		margin: 2rem 0;
 	}
 
-	a {
-		text-decoration: none;
-		color: white;
-		font-size: 1.5rem;
-	}
-
-	.container {
-		position: relative;
-		text-align: center;
-		color: white;
-	}
-
-	.centered {
-		position: absolute;
-		top: 0;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-	img {
-		height: 6rem;
 	
-		border-radius: 1rem;
-	}
+
+	
+
 
 	.ilojo-bar {
 		height: 20rem;

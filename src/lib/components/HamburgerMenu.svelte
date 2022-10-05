@@ -1,21 +1,31 @@
 <script>
     import { fly } from 'svelte/transition';
-    // import Footer from '$lib/components/Footer.svelte';
+
+    // import * as prismicH from "@prismicio/helpers";
+    // export let data;
+
+    // const { document } = data;
+
 </script>
 
-<section transition:fly={{ x:1000, duration: 800 }}>
+<section transition:fly={{ x:1000, duration: 700 }}>
    
    <nav>
-       <li><a href="/">Spanish Migrant</a></li>
-       <li><a href="/">The VIP</a></li>
-       <li><a href="/">A family House</a></li>
+        <li><a href="/">Spanish Migrant</a></li> 
+        <li><a href="/">The VIP</a></li>
+       <li><a href="/">A family House</a></li> 
 
 
-
+       <!-- <ul>
+        {#each data.document as data}
+        <li><a href="/{data.uid}">{@html prismicH.asHTML(data.data.storytitle)}</a> </li>
+        {/each}
+        
+    </ul>
+      -->
 
    </nav>
 
-   <!-- <Footer name={"FDND"}/> -->
 </section>
 
 
@@ -33,6 +43,7 @@
        height: 100vh;
        color: #ffffff;
        opacity: 100;
+       z-index: 10;
      
    }
 

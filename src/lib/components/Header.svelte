@@ -1,7 +1,6 @@
 <script>
 	import Menu from '$lib/components/HamburgerMenu.svelte';
 
-	//  export let image;
 	let close;
 	let openImg;
 	let text;
@@ -45,7 +44,7 @@
 </header>
 
 {#if open}
-	<Menu />
+	<Menu/>
 {/if}
 
 <style>
