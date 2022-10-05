@@ -1,28 +1,24 @@
 <script>
     import { fly } from 'svelte/transition';
 
-    // import * as prismicH from "@prismicio/helpers";
-    // export let data;
-
-    // const { document } = data;
+   
 
 </script>
 
 <section transition:fly={{ x:1000, duration: 700 }}>
    
    <nav>
-        <li><a href="/">Spanish Migrant</a></li> 
-        <li><a href="/">The VIP</a></li>
-       <li><a href="/">A family House</a></li> 
-
-
-       <!-- <ul>
-        {#each data.document as data}
-        <li><a href="/{data.uid}">{@html prismicH.asHTML(data.data.storytitle)}</a> </li>
-        {/each}
-        
-    </ul>
-      -->
+   
+        <li><a href="/a-spanish-migrant-looking-for-greener-pastures">A Spanish Migrant</a></li> 
+        <li><a href="/the-returnees-who-changed-lagos">The returnees</a></li>
+        <li><a href="/a-vip-from-abeokuta-visits-fernandez-house">A VIP</a></li>
+       <li><a href="/the-macaulay-connection">The Macaulay connection</a></li> 
+       <li><a href="/a-family-house-to-the-olaiyas">A family house</a></li> 
+       <li><a href="/memories-of-slave-trade">Slave trade</a></li> 
+       <li><a href="/botched-dreams-for-ilojo-bar">Botched dreams</a></li> 
+       <li><a href="/the-angels-story">The Angel's Story</a></li> 
+       <li><a href="/illegal-demolition">Illegal demolition</a></li> 
+ 
 
    </nav>
 

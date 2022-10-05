@@ -23,13 +23,13 @@
 			<img src="goldplate2.png" alt="goldplate2" />
 			<div class="centered"><a href="/overview">Discover Stories</a></div>
 		</div> -->
-		<Button link={'overview'} linktext={'Discover Stories'}/>
+		<Button link={'overview'} linktext={'Discover Stories'} height={'6rem'}/>
 
 		<img class="ilojo-bar" src="cdf-1950s.png" alt="Ilojo-bar" />
 	</section>
 </main>
 
-<Footer />
+<!-- <Footer /> -->
 
 <style>
 	main {

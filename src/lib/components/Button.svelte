@@ -2,10 +2,11 @@
 
     export let link;
     export let linktext;
+    export let height;
 </script>
 
  <div class="container">
-    <img src="goldplate2.png" alt="goldplate2" />
+    <img src="goldplate2.png" alt="goldplate2" style="height: {height};" />
     <div class="centered"><a href="/{link}">{linktext}</a></div>
 </div>
 
@@ -27,9 +28,7 @@
 	}
 
     img {
-		height: 6rem;
-        /* padding: 1rem; */
-	
+		height: 5rem;	
 		
 	}
 

@@ -1,101 +1,83 @@
 <script>
 	import Header from '../../lib/components/Header.svelte';
-    import Footer from '../../lib/components/Footer.svelte';
-    import Button from '$lib/components/Button.svelte';
+	import Footer from '../../lib/components/Footer.svelte';
+	import Button from '$lib/components/Button.svelte';
 	import * as prismicH from '@prismicio/helpers';
 	export let data;
 
 	const { document } = data;
 
-    console.log(document)
+	console.log(document);
+
+
+
 </script>
 
 <Header />
 
-    
-
 <main>
-    {#each data.document as data}
-        
-            <section>
-
-                <img class="storyimage" src={data.data.storyimages[0].image1.url} alt="test" />
-
-                <h2> {@html prismicH.asHTML(data.data.storytitle)}</h2>
-
-                <!-- <div class="container">
-                    <img src="goldplate2.png" alt="goldplate2" />
-                    <div class="centered"><a href="/{data.uid}">Discover Stories</a></div>
-                </div> -->
-                <Button link={data.uid} linktext={'Discover'}/>
+    
+	{#each data.document as data}
+  
+		<section>
+			<img class="storyimage" src={data.data.storyimages[0].image1.url} alt="test" />
 
 
-                <!-- <ul>
-                    <a href="/{data.uid}">
-                    <li>
-                        {@html prismicH.asHTML(data.data.storytitle)}
-                    </li>
-                </a>
-                   
-                    <li>
-                        <img src={data.data.storyimages[0].image1.url} alt="test" />
-                    </li> 
-                </ul> -->
-            </section>
-      
-    {/each}
+          
+			<h2>{@html prismicH.asHTML(data.data.storytitle)}</h2>
+
+	
+			<Button link={data.uid} linktext={'Discover'} height={'4rem'} />
+     
+		
+		</section>
+  
+	{/each}
 </main>
 
-<Footer />
+<!-- <Footer /> -->
 
 <style>
+	main {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+        /* flex-wrap: nowrap; */
+		overflow-x: scroll;
+        /* white-space:nowrap; */
+        overflow-y: hidden;
+		margin: 4rem 2rem;
+		gap: 4rem;
 
-
-main{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    overflow-x: scroll;
-    margin-top: 4rem;
-
-   
-}
-
-/* .container {
-		position: relative;
-		text-align: center;
-		color: white;
+        /* scrollbar-width: none; */
+        cursor: grab;
+        /* -webkit-overflow-scrolling: touch; */
 	}
 
-	.centered {
-		position: absolute;
-		top: 0;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	} */
+	section {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+        height: 400px;
+     
+      
+	}
 
- section{
-    background-color: aqua;
-   /* height: 250px; */
-   text-align: center;
- }
 
- .storyimage{
-    width: 200px;
-    height: auto;
- }
 
- /* img {
+	.storyimage {
+		width: 200px;
+		height: 200px;
+	}
+
+	/* img {
 		height: 3rem;
 	
 		border-radius: 1rem;
 	} */
 
-
-    h2{
-        font-size: 1rem;
-    }
-
+	h2 {
+		font-size: 1rem;
+	}
 </style>
