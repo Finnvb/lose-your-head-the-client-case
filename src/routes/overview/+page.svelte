@@ -15,7 +15,14 @@
 <main>
 	{#each data.document as data}
 		<section>
-			<img class="window" src="test.svg" alt="test" />
+
+<div class="window">
+			<img class="window" src="window.svg" alt="window" />
+			<img class="windowLeft" src="windowLeft.svg" alt="window" />
+			<img class="windowRight" src="windowRight.svg" alt="window" />
+		</div>
+
+
 			<div class="image-container">
 				<img class="storyimage" src={data.data.storyimages[0].image1.url} alt="test" />
 
@@ -41,7 +48,6 @@
 	}
 
 	section {
-		/* text-align: center; */
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -53,33 +59,76 @@
 		position: absolute;
 		width: 203px;
 		height: 225px;
-		/* background-color: aqua; */
-		/* height: 200px; */
+
 		
 	}
 	.window {
 		position: relative;
-		bottom: 0;
-		right: 0;
+		/* bottom: 0; */
+		/* right: 0; */
 		/* z-index: 100; */
+		
+	}
+
+	.windowLeft{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		z-index: 20;
+		margin-left: 12px;
+		margin-bottom: 11px;
+		/* padding-top: 12px; */
+		transition: transform 1.5s ease-in-out;
+		cursor: pointer;
+        transform-style: preserve-3d;
+        cursor: pointer;
+        transform: perspective(200px);
+		
+	}
+
+
+
+	.windowLeft:hover{
+		transform: rotateY(-180deg);
+		/* transform:rotateZ(180deg); */
+		transform-origin: left;
+/* transform-box:fill-box; */
+	}
+
+	.windowRight{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		z-index: 20;
+	
+		margin-right: 13px;
+		margin-bottom: 11px;
+		/* padding-top: 12px; */
+		transition: transform 1.5s;
+		cursor: pointer;
+        transform-style: preserve-3d;
+        cursor: pointer;
+        transform: perspective(200px);
+	}
+
+	.windowRight:hover{
+		transform: rotateY(180deg);
+		/* transform:rotateZ(180deg); */
+		transform-origin: right;
+/* transform-box:fill-box; */
 	}
 
 	.storyimage {
 		width: 100%;
 		height: 100%;
-		/* position: absolute; */
-		/* bottom: 0; */
-		/* right: 0; */
-		/* left: 0; */
+
 	}
 
-	/* img {
-		height: 3rem;
-	
-		border-radius: 1rem;
-	} */
 
 	h2 {
 		font-size: 1rem;
 	}
 </style>
+
+
+

@@ -16,6 +16,10 @@
 		
 			<h2>{@html prismicH.asHTML(data.storytitle)}</h2>
 
+			<article>
+				{@html prismicH.asHTML(data.storycontent)}
+			</article>
+
 
 </main>
 
@@ -23,6 +27,20 @@
 
 main{
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	/* height: 100vh; */
+	
+	padding: 0 5rem;
+}
+
+h2{
+	margin-bottom: 2rem;
+}
+
+article{
+	width: 900px;
+	margin-bottom: 2rem;
 }
 </style>
