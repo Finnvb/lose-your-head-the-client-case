@@ -8,67 +8,69 @@
 	const { document } = data;
 
 	console.log(document);
-
-
-
 </script>
 
 <Header />
 
 <main>
-    
 	{#each data.document as data}
-  
 		<section>
-			<img class="storyimage" src={data.data.storyimages[0].image1.url} alt="test" />
+			<img class="window" src="test.svg" alt="test" />
+			<div class="image-container">
+				<img class="storyimage" src={data.data.storyimages[0].image1.url} alt="test" />
 
-
-          
+				
+			</div>
 			<h2>{@html prismicH.asHTML(data.data.storytitle)}</h2>
 
-	
 			<Button link={data.uid} linktext={'Discover'} height={'4rem'} />
-     
-		
 		</section>
-  
 	{/each}
 </main>
 
 <!-- <Footer /> -->
-
 <style>
 	main {
 		display: flex;
-		justify-content: space-between;
-		flex-direction: row;
-        /* flex-wrap: nowrap; */
-		overflow-x: scroll;
-        /* white-space:nowrap; */
-        overflow-y: hidden;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
 		margin: 4rem 2rem;
 		gap: 4rem;
-
-        /* scrollbar-width: none; */
-        cursor: grab;
-        /* -webkit-overflow-scrolling: touch; */
 	}
 
 	section {
-		text-align: center;
+		/* text-align: center; */
 		display: flex;
+		justify-content: center;
+		align-items: center;
 		flex-direction: column;
-		justify-content: space-between;
-        height: 400px;
-     
-      
 	}
 
-
+	.image-container {
+		
+		position: absolute;
+		width: 203px;
+		height: 225px;
+		/* background-color: aqua; */
+		/* height: 200px; */
+		
+	}
+	.window {
+		position: relative;
+		bottom: 0;
+		right: 0;
+		/* z-index: 100; */
+	}
 
 	.storyimage {
-		width: 200px;
-		height: 200px;
+		width: 100%;
+		height: 100%;
+		/* position: absolute; */
+		/* bottom: 0; */
+		/* right: 0; */
+		/* left: 0; */
 	}
 
 	/* img {
