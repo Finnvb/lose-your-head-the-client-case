@@ -2,32 +2,8 @@
 <mask id="path-1-inside-1_35_105" fill="white">
 <rect y="96" width="227" height="246" rx="10"/>
 </mask>
-<rect y="96" width="227" height="246" rx="10" fill="#D9D9D9" stroke="#A17E53" stroke-width="24" mask="url(#path-1-inside-1_35_105)"/>
-<path d="M108 6H119C173.319 6 217.721 48.4597 220.826 102H6.17354C9.27925 48.4597 53.6811 6 108 6Z" fill="#6C5334" stroke="#A17E53" stroke-width="12"/>
-<mask id="path-3-inside-2_35_105" fill="white">
-<path d="M114 108H215V330H114V108Z"/>
-</mask>
-
-
-<path d="M114 108H215V330H114V108Z" fill="#D7C2A7"/>
-<path d="M120 330V108H108V330H120Z" fill="#A17E53" mask="url(#path-3-inside-2_35_105)"/>
-<rect x="137" y="261" width="56" height="41" rx="5" fill="#6C5334"/>
-<rect x="137" y="199" width="56" height="41" rx="5" fill="#6C5334"/>
-<rect x="137" y="137" width="56" height="41" rx="5" fill="#6C5334"/>
-
-
-<mask id="path-8-inside-3_35_105" fill="white">
-<path d="M12 108H114V330H12V108Z"/>
-</mask>
-
-<g class="windowLeft"   >
-<path d="M12 108H114V330H12V108Z" fill="#D7C2A7"/>
-<path d="M108 108V330H120V108H108Z" fill="#A17E53" mask="url(#path-8-inside-3_35_105)"/>
-<rect x="35" y="199" width="56" height="41" rx="5" fill="#6C5334"/>
-<rect x="35" y="261" width="56" height="41" rx="5" fill="#6C5334"/>
-<rect x="36" y="137" width="56" height="41" rx="5" fill="#6C5334"/>
-</g>
-
+<rect y="96" width="227" height="246" rx="10" stroke="#A17E53" stroke-width="24" mask="url(#path-1-inside-1_35_105)"/>
+<path d="M6.17354 102C9.27925 48.4597 53.6811 6 108 6H119C173.319 6 217.721 48.4597 220.826 102H6.17354Z" fill="#6C5334" stroke="#A17E53" stroke-width="12"/>
 <g style="mix-blend-mode:lighten">
 <line x1="28.2416" y1="99.1192" x2="102.162" y2="11.0241" stroke="#795D3B" stroke-width="6"/>
 </g>
@@ -44,7 +20,7 @@
 <line x1="113.409" y1="108.193" x2="42.7019" y2="23.9284" stroke="#795D3B" stroke-width="6"/>
 </g>
 <g style="mix-blend-mode:lighten">
-<line x1="71.697" y1="100.552" x2="26.7019" y2="46.9284" stroke="#795D3B" stroke-width="6"/>
+<line x1="71.697" y1="100.552" x2="26.7018" y2="46.9284" stroke="#795D3B" stroke-width="6"/>
 </g>
 <g style="mix-blend-mode:lighten">
 <line x1="30.9855" y1="97.9097" x2="11.7019" y2="74.9284" stroke="#795D3B" stroke-width="6"/>

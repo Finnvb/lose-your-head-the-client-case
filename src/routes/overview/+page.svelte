@@ -21,7 +21,7 @@
 			</div>
 
 			<div class="window">
-				<img class="window" src="test.svg" alt="window" />
+				<img class="window" src="window.svg" alt="window" />
 				<img class="windowLeft" src="windowLeft.svg" alt="window" />
 				<img class="windowRight" src="windowRight.svg" alt="window" />
 				<div class="test" />
