@@ -8,6 +8,10 @@
 	const { document } = data;
 
 	console.log(document);
+
+
+
+
 </script>
 
 <Header />
@@ -17,7 +21,7 @@
 		<section>
 
 			<div class="image-container">
-				<img class="storyimage" src={data.data.storyimages[0].image1.url} alt="test" />
+				<img class="storyimage"  src={data.data.storyimages[0].image1.url} alt="test" />
 			</div>
 
 			<div class="window">
@@ -41,7 +45,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		flex-direction: column;
+		flex-direction: row;
+		flex-wrap: wrap;
 		margin: 4rem 2rem;
 		gap: 4rem;
 	}
@@ -51,6 +56,7 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+		/* width: 25rem; */
 		
 	}
 
@@ -58,6 +64,7 @@
 		position: absolute;
 		width: 205px;
 		height: 228px;	
+
 	
 	}
 
@@ -111,15 +118,20 @@
 
 
 
-	.storyimage {
+	.storyimage  {
 		width: 100%;
-		height: 100%;
+		/* height: 100%; */
 		cursor: pointer;
+		height: 230px;
+		aspect-ratio: 16/9;
+	
 		
 	}
 
 
 	h2 {
 		font-size: 1rem;
+		text-align: center;
+		width: 500px;
 	}
 </style>
