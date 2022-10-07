@@ -39,7 +39,8 @@
        height: 100vh;
        color: #ffffff;
        opacity: 100;
-       z-index: 10;
+       z-index: 100;
+       position: fixed;
      
    }
 
