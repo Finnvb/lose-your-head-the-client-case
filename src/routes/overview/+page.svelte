@@ -64,6 +64,7 @@
 		position: absolute;
 		width: 205px;
 		height: 228px;	
+		margin-bottom: 1.6rem;
 
 	
 	}
@@ -122,8 +123,8 @@
 		width: 100%;
 		/* height: 100%; */
 		cursor: pointer;
-		height: 230px;
-		aspect-ratio: 16/9;
+		height: 235px;
+		/* aspect-ratio: 16/9; */
 	
 		
 	}
