@@ -75,7 +75,7 @@
 		position: relative;
 		width: 7rem;
 		height: 5rem;
-		background-image: url('goldplatehome.svg');
+		background-image: url('/goldplatehome.svg');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
