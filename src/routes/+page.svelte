@@ -25,7 +25,11 @@
 		</div> -->
 		<Button link={'overview'} linktext={'Discover Stories'} height={'6rem'}/>
 
+		<!-- <div class="container"> -->
+			<!-- <img class="frame" src="pictureFrame.png" alt="frame"/> -->
 		<img class="ilojo-bar" src="cdf-1950s.png" alt="Ilojo-bar" />
+
+	<!-- </div> -->
 	</section>
 </main>
 
@@ -56,11 +60,39 @@
 
 	
 
+	/* .container{
+		position: relative;
+		width: 30rem;
+		height: 20rem;	
+		background-color: aqua;
+		z-index: -5;
+		
+	} */
+
+	/* .frame{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+	object-fit: fill;
+	z-index: 2;
+
 	
+	} */
 
 
 	.ilojo-bar {
-		height: 20rem;
+	/* margin-left: 1rem;
+	margin-top: 1rem;
+		height: 90%;
+		width: 90%;
+		position: absolute;
+		object-fit: cover;
+		z-index: -3; */
+
+	height: 20rem;
+	box-shadow: 0px 0px 20px 1px #000;
+	border: 7px solid var(--red);
+		
 	}
 
 	section {

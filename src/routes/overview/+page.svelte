@@ -25,7 +25,7 @@
 			</div>
 
 			<div class="window">
-				<img class="window" src="window.svg" alt="window" />
+				<img  src="window.svg" alt="window" />
 				<img class="windowLeft" src="windowLeft.svg" alt="window" />
 				<img class="windowRight" src="windowRight.svg" alt="window" />
 				<div class="test" />
@@ -64,9 +64,20 @@
 		position: absolute;
 		width: 205px;
 		height: 228px;	
-		margin-bottom: 1.6rem;
+		/* margin-bottom: 1.6rem; */
 
 	
+	}
+
+	.storyimage  {
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		/* height: 235px; */
+		object-fit:cover;
+		/* aspect-ratio: 16/9; */
+	
+		
 	}
 
 	.window {
@@ -90,8 +101,8 @@
 		left: 0;
 		bottom: 0;
 		z-index: 20;
-		margin-left: 12px;
-		margin-bottom: 14px;
+		margin-left: 11px;
+		margin-bottom: 15px;
 		transition: transform 1.5s ease-in-out;
 		cursor: pointer;
 		transform-style: preserve-3d;
@@ -107,7 +118,7 @@
 		right: 0;
 		bottom: 0;
 		z-index: 20;
-		margin-right: 13px;
+		margin-right: 12px;
 		margin-bottom: 16px;
 		transition: transform 1.5s;
 		cursor: pointer;
@@ -119,19 +130,11 @@
 
 
 
-	.storyimage  {
-		width: 100%;
-		/* height: 100%; */
-		cursor: pointer;
-		height: 235px;
-		/* aspect-ratio: 16/9; */
-	
-		
-	}
+
 
 
 	h2 {
-		font-size: 1rem;
+		font-size: 14px;
 		text-align: center;
 		width: 500px;
 	}
