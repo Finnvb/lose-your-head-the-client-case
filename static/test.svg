@@ -1,0 +1,40 @@
+<svg width="228" height="342" viewBox="0 0 228 342" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_35_105" fill="white">
+<rect y="96" width="227" height="246" rx="10"/>
+</mask>
+<rect y="96" width="227" height="246" rx="10" stroke="#A17E53" stroke-width="24" mask="url(#path-1-inside-1_35_105)"/>
+<path d="M6.17354 102C9.27925 48.4597 53.6811 6 108 6H119C173.319 6 217.721 48.4597 220.826 102H6.17354Z" fill="#6C5334" stroke="#A17E53" stroke-width="12"/>
+<g style="mix-blend-mode:lighten">
+<line x1="28.2416" y1="99.1192" x2="102.162" y2="11.0241" stroke="#795D3B" stroke-width="6"/>
+</g>
+<g style="mix-blend-mode:lighten">
+<path d="M214.5 98.0235L140.579 9.92835" stroke="#795D3B" stroke-width="6"/>
+</g>
+<g style="mix-blend-mode:lighten">
+<line x1="179.622" y1="98.0235" x2="105.702" y2="9.92835" stroke="#795D3B" stroke-width="6"/>
+</g>
+<g style="mix-blend-mode:lighten">
+<line x1="145.622" y1="101.023" x2="71.7019" y2="12.9283" stroke="#795D3B" stroke-width="6"/>
+</g>
+<g style="mix-blend-mode:lighten">
+<line x1="113.409" y1="108.193" x2="42.7019" y2="23.9284" stroke="#795D3B" stroke-width="6"/>
+</g>
+<g style="mix-blend-mode:lighten">
+<line x1="71.697" y1="100.552" x2="26.7018" y2="46.9284" stroke="#795D3B" stroke-width="6"/>
+</g>
+<g style="mix-blend-mode:lighten">
+<line x1="30.9855" y1="97.9097" x2="11.7019" y2="74.9284" stroke="#795D3B" stroke-width="6"/>
+</g>
+<g style="mix-blend-mode:lighten">
+<line x1="62.2416" y1="101.119" x2="139.376" y2="9.19391" stroke="#795D3B" stroke-width="6"/>
+</g>
+<g style="mix-blend-mode:lighten">
+<line x1="97.3485" y1="104.204" x2="168.055" y2="19.9392" stroke="#795D3B" stroke-width="6"/>
+</g>
+<g style="mix-blend-mode:lighten">
+<line x1="136.776" y1="104.544" x2="194.627" y2="35.5997" stroke="#795D3B" stroke-width="6"/>
+</g>
+<g style="mix-blend-mode:lighten">
+<line x1="176.702" y1="97.3739" x2="208.841" y2="59.0717" stroke="#795D3B" stroke-width="6"/>
+</g>
+</svg>

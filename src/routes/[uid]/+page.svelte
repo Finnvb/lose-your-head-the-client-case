@@ -42,5 +42,7 @@ h2{
 article{
 	width: 900px;
 	margin-bottom: 2rem;
+	line-height: 140%;
+	width: 30rem;
 }
 </style>
