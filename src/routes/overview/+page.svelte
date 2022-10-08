@@ -56,35 +56,26 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		/* width: 25rem; */
-		
+	
 	}
 
 	.image-container {
 		position: absolute;
 		width: 205px;
 		height: 228px;	
-		/* margin-bottom: 1.6rem; */
 
-	
 	}
 
 	.storyimage  {
 		width: 100%;
 		height: 100%;
 		cursor: pointer;
-		/* height: 235px; */
 		object-fit:cover;
-		/* aspect-ratio: 16/9; */
-	
-		
 	}
 
 	.window {
 		position: relative;
-		cursor: pointer;
-	
-		
+		cursor: pointer;	
 	}
 
 	.window:hover .windowLeft {
@@ -127,11 +118,6 @@
 		transform: perspective(200px);
 		transform-origin: right;
 	}
-
-
-
-
-
 
 	h2 {
 		font-size: 14px;

@@ -1,82 +1,130 @@
 <script>
 	export let data;
-	import * as prismicH from "@prismicio/helpers";
+	import * as prismicH from '@prismicio/helpers';
 	import Header from '../../lib/components/Header.svelte';
 	import Footer from '../../lib/components/Footer.svelte';
 	import Button from '$lib/components/Button.svelte';
 
-let number;
-console.log(data)
-let test = 1
-// console.log(data.storyimages[0].image2.alt)
+	let number;
+	console.log(data);
+	let test = 1;
 </script>
-
 
 <Header />
 
+<h1>{@html prismicH.asHTML(data.storytitle)}</h1>
 <main>
+	<p>{@html prismicH.asHTML(data.storypara[0].para1)}</p>
+	<div class="center">
+		<img
+			class="storyimage"
+			src={data.storyimages[0].image1.url}
+			alt={data.storyimages[0].image1.alt}
+		/>
+		<p class="alt">{data.storyimages[0].image1.alt}</p>
+	</div>
+	{#if data.storyimages[0].image2.url !== undefined}
+		<div class="center">
+			<img
+				class="storyimage"
+				src={data.storyimages[0].image2.url}
+				alt={data.storyimages[0].image2.alt}
+			/>
+			<p class="alt">{data.storyimages[0].image2.alt}</p>
+		</div>
+	{/if}
 
-		
-			<h2>{@html prismicH.asHTML(data.storytitle)}</h2>
+	<p>{@html prismicH.asHTML(data.storypara[0].para2)}</p>
 
-			<article>
-				{@html prismicH.asHTML(data.storycontent)}
-			</article>
+	<p>{@html prismicH.asHTML(data.storypara[0].para3)}</p>
+	{#if data.storyimages[0].image3.url !== undefined}
+		<div class="center">
+			<img
+				class="storyimage"
+				src={data.storyimages[0].image3.url}
+				alt={data.storyimages[0].image3.alt}
+			/>
+			<p class="alt">{data.storyimages[0].image3.alt}</p>
+		</div>
+	{/if}
+	{#if data.storyimages[0].image4.url !== undefined}
+		<div class="center">
+			<img
+				class="storyimage"
+				src={data.storyimages[0].image4.url}
+				alt={data.storyimages[0].image4.alt}
+			/>
+			<p class="alt">{data.storyimages[0].image4.alt}</p>
+		</div>
+	{/if}
+	<p>{@html prismicH.asHTML(data.storypara[0].para4)}</p>
 
-	
-			 
-		
-			 <img class="storyimage"  src={data.storyimages[0].image1.url} alt={(data.storyimages[0].image1.alt)} /> 
-			 <!-- <p>{(data.storyimages[0].image1.alt)}</p> -->
-			 <img class="storyimage"  src={data.storyimages[0].image2.url} alt={(data.storyimages[0].image2.alt)} />
-			 <!-- <p>{(data.storyimages[0].image2.alt)}</p> -->
-			<img class="storyimage"  src={data.storyimages[0].image3.url} alt={(data.storyimages[0].image3.alt)} />
-			<!-- <p>{(data.storyimages[0].image3.alt)}</p> -->
-			<img class="storyimage"  src={data.storyimages[0].image4.url} alt={(data.storyimages[0].image4.alt)} />
-			<!-- <p>{(data.storyimages[0].image4.alt)}</p> -->
-			<img class="storyimage"  src={data.storyimages[0].image5.url} alt={(data.storyimages[0].image5.alt)} /> 
-			<!-- <p>{(data.storyimages[0].image5.alt)}</p> -->
-			<img class="storyimage"  src={data.storyimages[0].image6.url} alt={(data.storyimages[0].image6.alt)} />
-			<!-- <p>{(data.storyimages[0].image6.alt)}</p> -->
-			<img class="storyimage"  src={data.storyimages[0].image7.url} alt={(data.storyimages[0].image7.alt)} />
-			<!-- <p>{(data.storyimages[0].image7.alt)}</p> -->
+	<p>{@html prismicH.asHTML(data.storypara[0].para5)}</p>
+	{#if data.storyimages[0].image5.url !== undefined}
+		<div class="center">
+			<img
+				class="storyimage"
+				src={data.storyimages[0].image5.url}
+				alt={data.storyimages[0].image5.alt}
+			/>
+			<p class="alt">{data.storyimages[0].image5.alt}</p>
+		</div>
+	{/if}
 
-			
-
-
-			<!-- {#each data.storyimages as image}
-	
-	<img class="storyimage"  src={data.storyimages[0].image3.url} alt="test" />
-{/each} -->
-
-		
+	{#if data.storyimages[0].image6.url !== undefined}
+		<div class="center">
+			<img
+				class="storyimage"
+				src={data.storyimages[0].image6.url}
+				alt={data.storyimages[0].image6.alt}
+			/>
+			<p class="alt">{data.storyimages[0].image6.alt}</p>
+		</div>
+	{/if}
+	<p>{@html prismicH.asHTML(data.storypara[0].para6)}</p>
 </main>
 
+<!-- <Footer/> -->
 <style>
+	main {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 3rem;
+		margin-bottom: 2rem;
+	}
 
-main{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	/* height: 100vh; */
-	
-	padding: 0 5rem;
-}
+	p {
+		width: 50%;
+		line-height: 140%;
+		width: 30rem;
+		font-size: 1rem;
+	}
 
-h2{
-	margin-bottom: 2rem;
-}
+	div p {
+		text-align: center;
+		font-size: 14px;
+	}
 
-article{
-	width: 900px;
-	margin-bottom: 2rem;
-	line-height: 140%;
-	width: 30rem;
-}
+	h1 {
+		margin-bottom: 3rem;
+		font-size: 1.5rem;
+		text-align: center;
+	}
 
-img{
-	width: 25rem;
-	height: 100%;
-}
+	.center {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	img {
+		width: 25rem;
+		height: 100%;
+		border-radius: 0.5rem;
+		box-shadow: 5px 30px 30px 2px #000;
+	}
 </style>
