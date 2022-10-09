@@ -16,7 +16,7 @@
 		bottom: 0;
 		left: 0;
 		cursor: pointer;
-		margin: 2rem;
+		margin: 1rem;
 		/* outline: 4px solid var(--red); */
 	}
 
