@@ -10,14 +10,14 @@
 
 	console.log(document);
 
-
+	import { fade } from 'svelte/transition';
 
 
 </script>
 
 <Header />
 
-<main>
+<main >
 	{#each data.document as data}
 		<section>
 

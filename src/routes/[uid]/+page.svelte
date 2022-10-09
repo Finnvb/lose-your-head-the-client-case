@@ -6,9 +6,11 @@
 	import Button from '$lib/components/Button.svelte';
 	import ScrollToTopButton from '$lib/components/ScrollToTopButton.svelte';
 
-	let number;
+
 	console.log(data);
-	let test = 1;
+
+
+	import { fade } from 'svelte/transition';
 </script>
 
 <Header />
@@ -131,6 +133,7 @@
 		width: 25rem;
 		height: 100%;
 		border-radius: 0.5rem;
-		box-shadow: 5px 30px 30px 2px #000;
+		/* box-shadow: 5px 30px 30px 2px #000; */
+		box-shadow: 0px 30px 50px 2px #000;
 	}
 </style>

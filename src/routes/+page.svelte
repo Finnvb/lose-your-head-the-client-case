@@ -6,15 +6,21 @@
 
     const { document } = data;
 
+
+	import { fade } from 'svelte/transition';
+
+
+	
+
 	// console.log(document)
 </script>
 
-<main>
+<main >
 	<header>
 		<!-- <h1>{@html prismicH.asHTML(document[2].data.storytitle)}</h1> -->
-		<h1>Stories of the <br /> ILOJO BAR</h1>
+		<h1 >Stories of the <br /> ILOJO BAR</h1>
 
-		<h2>Discover the stories of the <br /> demolished bar in Lagos</h2>
+		<h2 >Discover the stories of the <br /> demolished bar in Lagos</h2>
 	</header>
 
 	<section>

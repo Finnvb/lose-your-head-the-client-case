@@ -1,9 +1,9 @@
 <script>
 	export let uid;
 </script>
-
+<div>
 <a href={uid}> <div class="btn"><img src="/Arrow.svg" alt="button" /></div></a>
-
+</div>
 <style>
 	.btn {
 		background-color: var(--redLight);
@@ -18,6 +18,7 @@
 		cursor: pointer;
 		margin: 1rem;
 		/* outline: 4px solid var(--red); */
+	
 	}
 
 	.btn:hover {
@@ -32,5 +33,8 @@
 		transition: 0.5s ease;
 		width: 100%;
 		height: 100%;
+	
 	}
+
+
 </style>
