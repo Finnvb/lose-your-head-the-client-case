@@ -9,7 +9,7 @@
   * [Bronnen](#bronnen)
   * [Licentie](#licentie)
 
-## 📃 Beschrijving
+## Beschrijving
 Op deze website vind je een overzicht van alle verhalen rondom de Ilojo Bar in Lagos Nigeria, die in 2016 is verwoest.
 
 [Live versie](https://lose-your-head-the-client-case-orcin.vercel.app/)
@@ -21,7 +21,7 @@ Op deze website vind je een overzicht van alle verhalen rondom de Ilojo Bar in L
 * Sveltekit
 * Prismic.io
 
-## ⚡ Installatie & Gebruik
+## Installatie & Gebruik
 ```
 
     Clone of download deze repository
