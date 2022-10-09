@@ -1,5 +1,5 @@
 #  Ilojo Bar
-![IlojoBar](https://user-images.githubusercontent.com/26089533/194767762-b4abd0e7-9d1b-4288-acec-f90f08f62637.png))
+![IlojoBar](https://user-images.githubusercontent.com/26089533/194767762-b4abd0e7-9d1b-4288-acec-f90f08f62637.png)
 
 ## Inhoudsopgave
   * [Beschrijving](#beschrijving)
@@ -10,15 +10,15 @@
   * [Licentie](#licentie)
 
 ## 📃 Beschrijving
-Op deze website vind je een overzicht van alle verhalen die gaan over de Ilojo Bar in Lagos, Nigeria die in 2016 is verwoest.
-[Live]([https://lose-your-head-the-client-case-orcin.vercel.app/])
+Op deze website vind je een overzicht van alle verhalen rondom de Ilojo Bar in Lagos Nigeria, die in 2016 is verwoest.
+![Live]([https://lose-your-head-the-client-case-orcin.vercel.app/])
 
 ## Kenmerken
 * HTML
 * CSS
 * Javascript
 * Sveltekit
-* PrismicIo
+* Prismic.io
 
 ## ⚡ Installatie & Gebruik
 ```
@@ -31,7 +31,7 @@ Op deze website vind je een overzicht van alle verhalen die gaan over de Ilojo B
 
 ## Bronnen
 - [Sveltekit](https://kit.svelte.dev/)
-- [PrismicIo(https://prismic.io/)
+- [Prismic.io(https://prismic.io/)
 
 ## Licentie
 
