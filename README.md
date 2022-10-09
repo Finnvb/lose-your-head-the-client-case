@@ -32,7 +32,7 @@ Op deze website vind je een overzicht van alle verhalen rondom de Ilojo Bar in L
 
 ## Bronnen
 - [Sveltekit](https://kit.svelte.dev/)
-- [Prismic.io(https://prismic.io/)
+- [Prismic.io](https://prismic.io/)
 
 ## Licentie
 
