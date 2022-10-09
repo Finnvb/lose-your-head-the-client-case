@@ -11,7 +11,8 @@
 
 ## 📃 Beschrijving
 Op deze website vind je een overzicht van alle verhalen rondom de Ilojo Bar in Lagos Nigeria, die in 2016 is verwoest.
-![Live]([https://lose-your-head-the-client-case-orcin.vercel.app/])
+
+![Live](https://lose-your-head-the-client-case-orcin.vercel.app/)
 
 ## Kenmerken
 * HTML
