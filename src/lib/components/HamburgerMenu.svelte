@@ -81,4 +81,11 @@
        transition: 300ms;
        text-align: center;
    }
+
+
+   @media (max-width:40rem){
+    section{
+        width: 70vw;
+    }
+   }
 </style>

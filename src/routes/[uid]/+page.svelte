@@ -133,7 +133,26 @@
 		width: 25rem;
 		height: 100%;
 		border-radius: 0.5rem;
-		/* box-shadow: 5px 30px 30px 2px #000; */
 		box-shadow: 0px 30px 50px 2px #000;
 	}
+
+	@media (max-width:40rem){
+				img{
+					width: 18rem;
+				}
+
+				p{
+					width: 20rem;
+				}
+
+				main{
+					gap:2rem;
+				}
+
+				h1{font-size: 0.8rem;
+				padding: 0rem 1rem;
+			margin: 2rem 0;}
+		}
+
+
 </style>

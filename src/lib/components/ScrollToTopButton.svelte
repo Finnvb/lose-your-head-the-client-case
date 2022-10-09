@@ -36,5 +36,9 @@
 	
 	}
 
-
+		@media (max-width:40rem){
+				.btn{
+					position:relative;
+				}
+		}
 </style>

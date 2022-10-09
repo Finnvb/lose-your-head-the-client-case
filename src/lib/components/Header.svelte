@@ -115,4 +115,21 @@
 	.close {
 		display: none;
 	}
+
+
+
+
+	@media (max-width:40em){
+
+		.centered{
+	font-size: 18px;
+	width: 5rem;
+height: 4rem;
+}
+
+.home{
+	width: 5rem;
+height: 4rem;
+}
+	}
 </style>

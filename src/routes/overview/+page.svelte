@@ -26,7 +26,7 @@
 			</div>
 
 			<div class="window">
-				<img  src="window.svg" alt="window" />
+				<img class="windoww" src="window.svg" alt="window" />
 				<img class="windowLeft" src="windowLeft.svg" alt="window" />
 				<img class="windowRight" src="windowRight.svg" alt="window" />
 				<div class="test" />
@@ -138,4 +138,41 @@
 		text-align: center;
 		width: 500px;
 	}
+
+
+
+	@media (max-width: 40em) {
+      h2{
+		font-size: 10px;
+		width: 22rem;
+	  }
+
+.windoww{
+	width: 12rem;
+}
+
+.image-container {
+		position: absolute;
+		width: 179px;
+		height: 196px;	
+
+	}
+
+	.windowRight, .windowLeft{
+		width: 90px;
+	}
+	.windowRight{
+	margin-right: 9px;
+margin-bottom: 10px;
+}
+
+.windowLeft{
+margin-left: 9px;
+margin-bottom: 10px;
+}
+
+
+}
+
+
 </style>

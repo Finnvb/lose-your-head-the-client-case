@@ -26,7 +26,7 @@
 	<section>
 
 
-		<Button link={'overview'} linktext={'Discover Stories'} height={'6rem'}/>
+		<Button link={'overview'} linktext={'Discover Stories'} height={'7rem'}/>
 
 
 		<img class="ilojo-bar" src="cdf-1950s.png" alt="Ilojo-bar" />
@@ -51,6 +51,7 @@
 		text-align: center;
 	}
 
+
 	h1 {
 		font-size: 4rem;
 	}
@@ -61,9 +62,10 @@
 	}
 
 	
-	.ilojo-bar {
+	section img{
 
-	height: 20rem;
+		width: 450px;
+	height: 100%;
 	box-shadow: 0px 0px 20px 1px #000;
 	border: 7px solid var(--red);
 		
@@ -75,5 +77,28 @@
 		align-items: center;
 		width: 100%;
 		margin: 2rem 0;
+	}
+
+
+
+	@media (max-width: 40em) {
+        section {
+            flex-direction: column-reverse;
+			
+        }
+
+h1{
+	font-size: 3rem;
+}
+
+h2{
+	font-size: 1.2rem;
+}
+		
+		section img{
+			margin-bottom: 2rem;
+			width: 300px;
+		
+		}
 	}
 </style>
