@@ -4,6 +4,7 @@
 	import Header from '../../lib/components/Header.svelte';
 	import Footer from '../../lib/components/Footer.svelte';
 	import Button from '$lib/components/Button.svelte';
+	import ScrollToTopButton from '$lib/components/ScrollToTopButton.svelte';
 
 	let number;
 	console.log(data);
@@ -82,7 +83,11 @@
 		</div>
 	{/if}
 	<p>{@html prismicH.asHTML(data.storypara[0].para6)}</p>
+
+	<ScrollToTopButton uid={data.uid}/>
 </main>
+
+
 
 <!-- <Footer/> -->
 <style>
@@ -94,6 +99,7 @@
 		align-items: center;
 		gap: 3rem;
 		margin-bottom: 2rem;
+		position: relative;
 	}
 
 	p {

@@ -2,6 +2,7 @@
 	import Header from '../../lib/components/Header.svelte';
 	import Footer from '../../lib/components/Footer.svelte';
 	import Button from '$lib/components/Button.svelte';
+	import ScrollToTopButton from '../../lib/components/ScrollToTopButton.svelte';
 	import * as prismicH from '@prismicio/helpers';
 	export let data;
 
@@ -37,10 +38,22 @@
 			<Button link={data.uid} linktext={'Discover'} height={'4rem'} />
 		</section>
 	{/each}
+
+	<!-- <div><img src="assets/app-homescreen.png" alt="Homescreen TestAssistent">
+	</div> -->
+	
+	
+	<ScrollToTopButton uid="overview"/>
+
 </main>
+
+
+
 
 <!-- <Footer /> -->
 <style>
+
+
 	main {
 		display: flex;
 		justify-content: center;
@@ -49,6 +62,7 @@
 		flex-wrap: wrap;
 		margin: 4rem 2rem;
 		gap: 4rem;
+		position: relative;
 	}
 
 	section {

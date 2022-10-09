@@ -49,7 +49,6 @@
        text-decoration: none;
        color: var(--grey);
        font-size: 1.5rem;
-       /* font-weight: bold; */
        transition: 300ms;
    }
 
