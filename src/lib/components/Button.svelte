@@ -19,8 +19,8 @@
 		position: relative;
 		text-align: center;
 		color: white;
+	
 	}
-
 	.centered {
 		position: absolute;
 		top: 0;

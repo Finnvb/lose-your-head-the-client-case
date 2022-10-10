@@ -1,42 +1,37 @@
 <script>
 	import Footer from '$lib/components/Footer.svelte';
 	import Button from '$lib/components/Button.svelte';
-	  import * as prismicH from "@prismicio/helpers";
-    export let data;
+	import * as prismicH from '@prismicio/helpers';
+	export let data;
 
-    const { document } = data;
+	const { document } = data;
 
-
-	import { fade } from 'svelte/transition';
-
-
-	
-
-	// console.log(document)
+	console.log(document)
 </script>
 
-<main >
+<main>
 	<header>
-		<!-- <h1>{@html prismicH.asHTML(document[2].data.storytitle)}</h1> -->
-		<h1 >Stories of the <br /> ILOJO BAR</h1>
+		
+		
+		<h1>Stories of the <br /> ILOJO BAR</h1>
 
-		<h2 >Discover the stories of the <br /> demolished bar in Lagos</h2>
+		<h2>Discover the stories of the <br /> demolished bar in Lagos</h2>
 	</header>
 
 	<section>
-
-
-		<Button source={"goldplate2.png"} link={'overview'} linktext={'Discover Stories'} color={"#F3F3F3"} height={'7rem'}/>
-
+		<Button
+			source={'goldplate2.png'}
+			link={'overview'}
+			linktext={'Discover Stories'}
+			color={'#F3F3F3'}
+			height={'7rem'}
+		/>
 
 		<img src="cdf-1950s.png" alt="Ilojo-bar" />
-
-
 	</section>
 </main>
 
 <!-- <Footer /> -->
-
 <style>
 	main {
 		display: flex;
@@ -51,7 +46,6 @@
 		text-align: center;
 	}
 
-
 	h1 {
 		font-size: 4rem;
 	}
@@ -61,14 +55,11 @@
 		margin: 2rem 0;
 	}
 
-	
-	section img{
-
+	section img {
 		width: 450px;
-	height: 100%;
-	box-shadow: 0px 0px 20px 1px #000;
-	border: 7px solid var(--red);
-		
+		height: 100%;
+		box-shadow: 0px 0px 20px 1px #000;
+		border: 7px solid var(--red);
 	}
 
 	section {
@@ -79,26 +70,22 @@
 		margin: 2rem 0;
 	}
 
-
-
 	@media (max-width: 40em) {
-        section {
-            flex-direction: column-reverse;
-			
-        }
+		section {
+			flex-direction: column-reverse;
+		}
 
-h1{
-	font-size: 3rem;
-}
+		h1 {
+			font-size: 3rem;
+		}
 
-h2{
-	font-size: 1.2rem;
-}
-		
-		section img{
+		h2 {
+			font-size: 1.2rem;
+		}
+
+		section img {
 			margin-bottom: 2rem;
 			width: 300px;
-		
 		}
 	}
 </style>

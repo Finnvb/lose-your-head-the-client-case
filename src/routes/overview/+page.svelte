@@ -10,7 +10,10 @@
 
 	console.log(document);
 
-	import { fade } from 'svelte/transition';
+
+
+
+
 </script>
 
 <Header />
@@ -23,7 +26,7 @@
 			</div>
 
 			<div class="window">
-				<img src="window.svg" alt="window" />
+				<img class="window" src="window.svg" alt="window" />
 				<img class="windowLeft" src="windowLeft.svg" alt="window" />
 				<img class="windowRight" src="windowRight.svg" alt="window" />
 				<div class="test" />
@@ -36,9 +39,10 @@
 	{/each}
 
 	<ScrollToTopButton uid="overview" />
+	<Footer />
 </main>
 
-<!-- <Footer /> -->
+
 <style>
 	main {
 		display: flex;
@@ -126,7 +130,7 @@
 			width: 22rem;
 		}
 
-		.windoww {
+		.window {
 			width: 12rem;
 		}
 

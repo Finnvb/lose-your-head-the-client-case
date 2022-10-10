@@ -2,9 +2,8 @@
     import { fly } from 'svelte/transition';
     import {page} from '$app/stores';
 
-
-
 </script>
+
 
 <section transition:fly={{ x:1000, duration: 700 }}>
    
