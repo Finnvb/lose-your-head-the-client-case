@@ -11,49 +11,35 @@
 	console.log(document);
 
 	import { fade } from 'svelte/transition';
-
-
 </script>
 
 <Header />
 
-<main >
+<main>
 	{#each data.document as data}
 		<section>
-
 			<div class="image-container">
-				<img class="storyimage"  src={data.data.storyimages[0].image1.url} alt="test" />
+				<img class="storyimage" src={data.data.storyimages[0].image1.url} alt="test" />
 			</div>
 
 			<div class="window">
-				<img class="windoww" src="window.svg" alt="window" />
+				<img src="window.svg" alt="window" />
 				<img class="windowLeft" src="windowLeft.svg" alt="window" />
 				<img class="windowRight" src="windowRight.svg" alt="window" />
 				<div class="test" />
 			</div>
 
-
 			<h2>{@html prismicH.asHTML(data.data.storytitle)}</h2>
 
-			<Button link={data.uid} linktext={'Discover'} height={'4rem'} />
+			<Button source={"goldplate.png"} link={data.uid} linktext={'Discover'} height={'4rem'} color={("#6c5334")} />
 		</section>
 	{/each}
 
-	<!-- <div><img src="assets/app-homescreen.png" alt="Homescreen TestAssistent">
-	</div> -->
-	
-	
-	<ScrollToTopButton uid="overview"/>
-
+	<ScrollToTopButton uid="overview" />
 </main>
-
-
-
 
 <!-- <Footer /> -->
 <style>
-
-
 	main {
 		display: flex;
 		justify-content: center;
@@ -70,26 +56,24 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-	
 	}
 
 	.image-container {
 		position: absolute;
 		width: 205px;
-		height: 228px;	
-
+		height: 228px;
 	}
 
-	.storyimage  {
+	.storyimage {
 		width: 100%;
 		height: 100%;
 		cursor: pointer;
-		object-fit:cover;
+		object-fit: cover;
 	}
 
 	.window {
 		position: relative;
-		cursor: pointer;	
+		cursor: pointer;
 	}
 
 	.window:hover .windowLeft {
@@ -99,7 +83,6 @@
 	.window:hover .windowRight {
 		transform: rotateY(180deg);
 	}
-
 
 	.windowLeft {
 		position: absolute;
@@ -115,8 +98,6 @@
 		transform: perspective(200px);
 		transform-origin: left;
 	}
-
-
 
 	.windowRight {
 		position: absolute;
@@ -139,40 +120,34 @@
 		width: 500px;
 	}
 
-
-
 	@media (max-width: 40em) {
-      h2{
-		font-size: 10px;
-		width: 22rem;
-	  }
+		h2 {
+			font-size: 10px;
+			width: 22rem;
+		}
 
-.windoww{
-	width: 12rem;
-}
+		.windoww {
+			width: 12rem;
+		}
 
-.image-container {
-		position: absolute;
-		width: 179px;
-		height: 196px;	
+		.image-container {
+			position: absolute;
+			width: 179px;
+			height: 196px;
+		}
 
+		.windowRight,
+		.windowLeft {
+			width: 90px;
+		}
+		.windowRight {
+			margin-right: 9px;
+			margin-bottom: 10px;
+		}
+
+		.windowLeft {
+			margin-left: 9px;
+			margin-bottom: 10px;
+		}
 	}
-
-	.windowRight, .windowLeft{
-		width: 90px;
-	}
-	.windowRight{
-	margin-right: 9px;
-margin-bottom: 10px;
-}
-
-.windowLeft{
-margin-left: 9px;
-margin-bottom: 10px;
-}
-
-
-}
-
-
 </style>

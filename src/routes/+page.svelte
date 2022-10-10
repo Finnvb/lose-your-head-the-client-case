@@ -26,10 +26,10 @@
 	<section>
 
 
-		<Button link={'overview'} linktext={'Discover Stories'} height={'7rem'}/>
+		<Button source={"goldplate2.png"} link={'overview'} linktext={'Discover Stories'} color={"#F3F3F3"} height={'7rem'}/>
 
 
-		<img class="ilojo-bar" src="cdf-1950s.png" alt="Ilojo-bar" />
+		<img src="cdf-1950s.png" alt="Ilojo-bar" />
 
 
 	</section>

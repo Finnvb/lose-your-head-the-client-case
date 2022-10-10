@@ -3,11 +3,13 @@
     export let link;
     export let linktext;
     export let height;
+	export let source;
+	export let color;
 </script>
 
  <div class="container">
-    <img src="goldplate2.png" alt="goldplate2" style="height: {height};" />
-    <div class="centered"><a href="/{link}">{linktext}</a></div>
+    <img src={source} alt="goldplate2" style="height: {height};" />
+    <div class="centered"><a href="/{link}" style="color: {color};" >{linktext}</a></div>
 </div>
 
 
@@ -24,7 +26,7 @@
 		top: 0;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, -50%);
+		transform: translate(-50%, -60%);
 	}
 
     img {
@@ -34,8 +36,8 @@
 
     a {
 		text-decoration: none;
-		color: white;
-		font-size: 1.4rem;
+		color: var(--light);
+		font-size: 1.2rem;
 	}
 
 </style>

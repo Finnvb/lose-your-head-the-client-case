@@ -1,5 +1,6 @@
 <script>
 	export let uid;
+	
 </script>
 <div>
 <a href={uid}> <div class="btn"><img src="/Arrow.svg" alt="button" /></div></a>
@@ -17,7 +18,6 @@
 		left: 0;
 		cursor: pointer;
 		margin: 1rem;
-		/* outline: 4px solid var(--red); */
 	
 	}
 

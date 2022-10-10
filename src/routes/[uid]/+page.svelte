@@ -99,7 +99,7 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		gap: 3rem;
+		gap: 2.5rem;
 		margin-bottom: 2rem;
 		position: relative;
 	}
@@ -109,6 +109,8 @@
 		line-height: 140%;
 		width: 30rem;
 		font-size: 1rem;
+		margin-bottom: 5rem;
+		
 	}
 
 	div p {
@@ -143,6 +145,7 @@
 
 				p{
 					width: 20rem;
+					margin-bottom: 0rem;
 				}
 
 				main{
