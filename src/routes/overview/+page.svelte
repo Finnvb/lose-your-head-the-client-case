@@ -39,7 +39,7 @@
 	{/each}
 
 	<ScrollToTopButton uid="overview" />
-	<Footer />
+	<!-- <Footer /> -->
 </main>
 
 
