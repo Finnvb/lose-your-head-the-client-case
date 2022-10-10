@@ -39,9 +39,9 @@
 	{/each}
 
 	<ScrollToTopButton uid="overview" />
-	<!-- <Footer /> -->
+	
 </main>
-
+<!-- <Footer /> -->
 
 <style>
 	main {
