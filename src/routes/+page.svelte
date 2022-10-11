@@ -22,7 +22,7 @@
 		<h2>Discover the stories of the <br /> demolished bar in Lagos</h2>
 	</header>
 
-	<section>
+	<div>
 		<Button
 			source={'goldplate2.png'}
 			link={'overview'}
@@ -32,7 +32,7 @@
 		/>
 
 		<img src="cdf-1950s.png" alt="Ilojo-bar" />
-	</section>
+	</div>
 </main>
 
 <!-- <Footer /> -->
@@ -59,14 +59,14 @@
 		margin: 2rem 0;
 	}
 
-	section img {
+	div img {
 		width: 450px;
 		height: 100%;
 		box-shadow: 0px 0px 20px 1px #000;
 		border: 7px solid var(--red);
 	}
 
-	section {
+	div {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
@@ -75,7 +75,7 @@
 	}
 
 	@media (max-width: 40em) {
-		section {
+		div {
 			flex-direction: column-reverse;
 		}
 
@@ -87,7 +87,7 @@
 			font-size: 1.2rem;
 		}
 
-		section img {
+		div img {
 			margin-bottom: 2rem;
 			width: 300px;
 		}
