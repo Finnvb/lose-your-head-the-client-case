@@ -9,6 +9,10 @@
 	console.log(document)
 </script>
 
+<svelte:head>
+	<title>Ilojo Bar</title>
+</svelte:head>
+
 <main>
 	<header>
 		
