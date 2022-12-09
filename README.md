@@ -1,7 +1,7 @@
 
 
 # Ilojo Bar
-
+Dit is een website voor de Ilojo Bar waarmee je verhalen kunt lezen over de verwoeste bar in Nigeria, Lagos.
 
 
 ## Inhoudsopgave
@@ -14,7 +14,7 @@
   * [Licentie](#licentie)
 
 ## Beschrijving
-Dit is een website voor de Ilojo Bar waarmee je verhalen kunt lezen over de verwoeste Ilojo Bar in Nigeria, Lagos.
+
 ![afbeelding](https://user-images.githubusercontent.com/26089533/206701604-952e5e84-06d3-463d-a655-3add62cdd66f.png)
 [Live versie](https://lose-your-head-the-client-case-orcin.vercel.app/)
 
