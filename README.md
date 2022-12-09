@@ -1,33 +1,53 @@
-# create-svelte
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+# Ilojo Bar
+Dit is een website voor de Ilojo Bar waarmee je verhalen kunt lezen over de verwoeste bar in Nigeria, Lagos.
+Gemaakt in Sveltekit en met Prismic.io
 
-## Creating a project
+## Inhoudsopgave
 
-If you're seeing this, you've probably already done this step. Congrats!
+  * [Beschrijving](#beschrijving)
+  * [Kenmerken](#kenmerken)
+  * [Installatie](#installatie)
+  * [Gebruik](#gebruik)
+  * [Bronnen](#bronnen)
+  * [Licentie](#licentie)
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Beschrijving
 
-# create a new project in my-app
-npm create svelte@latest my-app
+![afbeelding](https://user-images.githubusercontent.com/26089533/206701604-952e5e84-06d3-463d-a655-3add62cdd66f.png)
+[Live versie](https://lose-your-head-the-client-case-orcin.vercel.app/)
+
+## Kenmerken
+
+* HTML
+* CSS
+* Sveltekit
+* Prismic.io
+
+## Installatie
+
+```
+# Cloning the repository
+git clone git@github.com:Finnvb/lose-your-head-the-client-case.git
+
+# Moving to the folder
+cd lose-your-head-the-client-case
+
+# Install NPM packages
+npm install
+
+# Run local server
+npm run start
+
 ```
 
-## Developing
+## Gebruik
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Bronnen
+- [Sveltekit](https://kit.svelte.dev/)
+- [Prismic](https://prismic.io/
+## Licentie
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
 
 ```bash
 npm run build

@@ -1,5 +1,7 @@
 <script>
 	import Menu from '$lib/components/HamburgerMenu.svelte';
+
+
 	let text;
 	let open = false;
 	let active = false;
@@ -93,9 +95,12 @@
 		text-align: center;
 		font-size: 1.2rem;
 	}
+
 	p {
 		font-size: 1rem;
 	}
+
+
 	.container {
 		position: relative;
 		width: 50px;
@@ -111,6 +116,47 @@
 	span:nth-child(1).active {
 		transform: translateY(18px) rotate(45deg);
 		transform-origin: center;
+	}
+	.container span:nth-child(2) {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: var(--animation-duration);
+	}
+	span:nth-child(2).active {
+		transform: rotateX(90deg);
+		transform-origin: center;
+		opacity: 0;
+	}
+	.container span:nth-child(3) {
+		position: absolute;
+		bottom: 0;
+		transition: var(--animation-duration);
+	}
+	.container span:nth-child(3).active {
+		transform: translateY(-18px) rotate(135deg);
+		transform-origin: center;
+	}
+	span {
+		width: 100%;
+		height: 5px;
+		background-color: #ffffff;
+		z-index: 999;
+		border-radius: 1rem;
+	}
+
+	@media (max-width: 40em) {
+		.centered {
+			font-size: 18px;
+			width: 5rem;
+			height: 4rem;
+		}
+
+		.home {
+			width: 5rem;
+			height: 4rem;
+		}
 	}
 	.container span:nth-child(2) {
 		position: absolute;
