@@ -1,25 +1,6 @@
 <script>
 	import Menu from '$lib/components/HamburgerMenu.svelte';
 
-	// let closeImg;
-	// let openImg;
-	// let text;
-	// export let open = false;
-	// let top;
-	// export let closeMenu = () => {
-	// 	// closeImg.style.display = 'none';
-	// 	// openImg.style.display = 'flex';
-	// 	text.style.visibility = 'hidden';
-	// 	open = true;
-	// 	top.classlist.add("moveDown")
-	// };
-
-	// export let openMenu = () => {
-	// 	openImg.style.display = 'none';
-	// 	closeImg.style.display = 'flex';
-	// 	text.style.visibility = 'visible';
-	// 	open = false;
-	// };
 	let text;
 	let open = false;
 	let active = false;
@@ -45,18 +26,7 @@
 	<h1>Stories of the <br /> ILOJO BAR</h1>
 
 	<div>
-		<!-- <div class="container">
-			<img bind:this={closeImg} on:click={closeMenu} src="close.svg" alt="closeImg" />
-			
-				
-			<img
-				class="close"
-				bind:this={openImg}
-				on:click={openMenu}
-				src="hamburgerMenu.svg"
-				alt="hamburgerImg"
-			/>
-		</div> -->
+	
 		<section>
 			<div class="container" on:click={toggleMenu}>
 				<span class:active />
