@@ -1,7 +1,12 @@
-#  Ilojo Bar
-![IlojoBar](https://user-images.githubusercontent.com/26089533/194767762-b4abd0e7-9d1b-4288-acec-f90f08f62637.png)
+> _Fork_ deze leertaak en ga aan de slag. 
+Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. 
+De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+
+# Titel
+<!-- Geef je project een titel en schrijf in één zin wat het is -->
 
 ## Inhoudsopgave
+
   * [Beschrijving](#beschrijving)
   * [Kenmerken](#kenmerken)
   * [Installatie](#installatie)
@@ -10,29 +15,18 @@
   * [Licentie](#licentie)
 
 ## Beschrijving
-Op deze website vind je een overzicht van alle verhalen rondom de Ilojo Bar in Lagos Nigeria, die in 2016 is verwoest.
-
-[Live versie](https://lose-your-head-the-client-case-orcin.vercel.app/)
+<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
+<!-- Voeg een mooie poster visual toe 📸 -->
+<!-- Voeg een link toe naar Github Pages 🌐-->
 
 ## Kenmerken
-* HTML
-* CSS
-* Javascript
-* Sveltekit
-* Prismic.io
+<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 
-## Installatie & Gebruik
-```
+## Installatie
 
-    Clone of download deze repository
-    Ga naar de root directory van het project.
-    Gebruik npm install om de gebruikte dev dependencies en packages te installeren.
-    Gebruik npm run dev om de web-server te starten. 
-```
+## Gebruik
 
 ## Bronnen
-- [Sveltekit](https://kit.svelte.dev/)
-- [Prismic.io](https://prismic.io/)
 
 ## Licentie
 
