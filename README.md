@@ -2,7 +2,7 @@
 
 # Ilojo Bar
 Dit is een website voor de Ilojo Bar waarmee je verhalen kunt lezen over de verwoeste bar in Nigeria, Lagos.
-
+Gemaakt in Sveltekit en met Prismic.io
 
 ## Inhoudsopgave
 
