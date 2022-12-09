@@ -17,7 +17,7 @@
 	<header>
 		
 		
-		<h1>Stories of the <br /> ILOJO BAR</h1>
+		<h1>Stories of the <br /> ILOJO BARRR</h1>
 
 		<h2>Discover the stories of the <br /> demolished bar in Lagos</h2>
 	</header>
