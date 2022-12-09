@@ -1,9 +1,8 @@
-> _Fork_ deze leertaak en ga aan de slag. 
-Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. 
-De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+
+# Ilojo Bar
+
+
 
 ## Inhoudsopgave
 
@@ -15,19 +14,39 @@ De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
   * [Licentie](#licentie)
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+Dit is een website voor de Ilojo Bar waarmee je verhalen kunt lezen over de verwoeste Ilojo Bar in Nigeria, Lagos.
+![afbeelding](https://user-images.githubusercontent.com/26089533/206701604-952e5e84-06d3-463d-a655-3add62cdd66f.png)
+[Live versie](https://lose-your-head-the-client-case-orcin.vercel.app/)
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+
+* HTML
+* CSS
+* Sveltekit
+* Prismic.io
 
 ## Installatie
+
+```
+# Cloning the repository
+git clone git@github.com:Finnvb/lose-your-head-the-client-case.git
+
+# Moving to the folder
+cd lose-your-head-the-client-case
+
+# Install NPM packages
+npm install
+
+# Run local server
+npm run start
+
+```
 
 ## Gebruik
 
 ## Bronnen
-
+- [Sveltekit](https://kit.svelte.dev/)
+- [Prismic](https://prismic.io/
 ## Licentie
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
