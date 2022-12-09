@@ -1,41 +1,38 @@
-#  Ilojo Bar
-![IlojoBar](https://user-images.githubusercontent.com/26089533/194767762-b4abd0e7-9d1b-4288-acec-f90f08f62637.png)
+# create-svelte
 
-## Inhoudsopgave
-  * [Beschrijving](#beschrijving)
-  * [Kenmerken](#kenmerken)
-  * [Installatie](#installatie)
-  * [Gebruik](#gebruik)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-## Beschrijving
-Op deze website vind je een overzicht van alle verhalen rondom de Ilojo Bar in Lagos Nigeria, die in 2016 is verwoest.
+## Creating a project
 
-[Live versie](https://lose-your-head-the-client-case-orcin.vercel.app/)
+If you're seeing this, you've probably already done this step. Congrats!
 
-## Kenmerken
-* HTML
-* CSS
-* Javascript
-* Sveltekit
-* Prismic.io
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
-## Installatie & Gebruik
+# create a new project in my-app
+npm create svelte@latest my-app
 ```
 
-    Clone of download deze repository
-    Ga naar de root directory van het project.
-    Gebruik npm install om de gebruikte dev dependencies en packages te installeren.
-    Gebruik npm run dev om de web-server te starten. 
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
 ```
 
-## Bronnen
-- [Sveltekit](https://kit.svelte.dev/)
-- [Prismic.io](https://prismic.io/)
+## Building
 
-## Licentie
+To create a production version of your app:
 
-![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
+```bash
+npm run build
+```
 
-This work is licensed under [GNU GPLv3](./LICENSE).
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.

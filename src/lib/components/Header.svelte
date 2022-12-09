@@ -1,23 +1,19 @@
 <script>
 	import Menu from '$lib/components/HamburgerMenu.svelte';
-
-	let close;
-	let openImg;
 	let text;
-	export let open = false;
-
-	export let closeMenu = () => {
-		close.style.display = 'none';
-		openImg.style.display = 'flex';
-		text.style.visibility = 'hidden';
-		open = true;
-	};
-
-	export let openMenu = () => {
-		openImg.style.display = 'none';
-		close.style.display = 'flex';
-		text.style.visibility = 'visible';
-		open = false;
+	let open = false;
+	let active = false;
+	const toggleMenu = function () {
+		active = !active;
+		if (active) {
+			active = true;
+			open = true;
+			text.style.visibility = 'hidden';
+		} else {
+			active = false;
+			open = false;
+			text.style.visibility = 'visible';
+		}
 	};
 </script>
 
@@ -29,25 +25,27 @@
 	<h1>Stories of the <br /> ILOJO BAR</h1>
 
 	<div>
-		<div class="container">
-			<img bind:this={close} on:click={closeMenu} src="close.svg" alt="closeImg" />
-			<img
-				class="close"
-				bind:this={openImg}
-				on:click={openMenu}
-				src="hamburgerMenu.svg"
-				alt="hamburgerImg"
-			/>
-		</div>
-		<p bind:this={text}>Menu</p>
+	
+		<section>
+			<div class="container" on:click={toggleMenu}>
+				<span class:active />
+				<span class:active />
+				<span class:active />
+			</div>
+	
+			<p bind:this={text}>Menu</p>
+		</section>
 	</div>
 </header>
 
 {#if open}
-	<Menu/>
+	<Menu />
 {/if}
 
 <style>
+	:root{
+		--animation-duration: 0.4s;
+	}
 	header {
 		display: flex;
 		justify-content: space-between;
@@ -56,7 +54,12 @@
 		font-size: 1.5rem;
 		padding: 1rem;
 	}
-
+	section{
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		align-items: center;
+	}
 	.centered {
 		position: absolute;
 		top: 0;
@@ -64,7 +67,6 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
-
 	a {
 		text-decoration: none;
 		color: rgb(118, 113, 19);
@@ -80,8 +82,6 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
-
-
 	.centered {
 		position: absolute;
 		top: 0;
@@ -89,47 +89,66 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
-
 	h1 {
 		text-align: center;
 		font-size: 1.2rem;
 	}
-
-	.container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 1rem 0;
-	}
-
 	p {
 		font-size: 1rem;
 	}
-
-	img {
+	.container {
+		position: relative;
+		width: 50px;
+		height: 40px;
 		cursor: pointer;
-
-		z-index: 9999;
+		z-index: 990;
 	}
-
-	.close {
-		display: none;
+	span:nth-child(1) {
+		position: absolute;
+		top: 0;
+		transition: var(--animation-duration);
 	}
-
-
-
-
-	@media (max-width:40em){
-
-		.centered{
-	font-size: 18px;
-	width: 5rem;
-height: 4rem;
-}
-
-.home{
-	width: 5rem;
-height: 4rem;
-}
+	span:nth-child(1).active {
+		transform: translateY(18px) rotate(45deg);
+		transform-origin: center;
+	}
+	.container span:nth-child(2) {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: var(--animation-duration);
+	}
+	span:nth-child(2).active {
+		transform: rotateX(90deg);
+		transform-origin: center;
+		opacity: 0;
+	}
+	.container span:nth-child(3) {
+		position: absolute;
+		bottom: 0;
+		transition: var(--animation-duration);
+	}
+	.container span:nth-child(3).active {
+		transform: translateY(-18px) rotate(135deg);
+		transform-origin: center;
+	}
+	span {
+		width: 100%;
+		height: 5px;
+		background-color: #ffffff;
+		z-index: 999;
+		border-radius: 1rem;
+	}
+	@media (max-width: 40em) {
+		.centered {
+			font-size: 18px;
+			width: 5rem;
+			height: 4rem;
+		}
+		.home {
+			width: 5rem;
+			height: 4rem;
+		}
 	}
 </style>
