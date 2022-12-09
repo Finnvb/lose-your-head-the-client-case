@@ -45,14 +45,10 @@ npm run start
 
 ## Bronnen
 - [Sveltekit](https://kit.svelte.dev/)
-- [Prismic](https://prismic.io/
+- [Prismic](https://prismic.io/)
 ## Licentie
 
 
-```bash
-npm run build
-```
+GNU GPL V3
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+This work is licensed under GNU GPLv3.
